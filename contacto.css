@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+.swiper-button-next::after {
+    font-size: 25px;
+}
+.swiper-button-next {
+    color: #DB241B;
+}
+.swiper-button-prev {
+    color: #DB241B;
+}
+
+.swiper-pagination-bullet {
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #DB241B;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-1 {
+    margin-right: 180px;
+    margin-top: 40px;
+}
+
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 {
+    width: 0;
+}
+.logo-2 {
+    width: 150px;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.social:hover {
+    background-color: #ab1c15;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #DB241B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.contacto {
+    text-align: center;
+    margin-top: 350px;
+    color: white;
+    font-size: 20px;
+}
+
+.contacto h2 {
+    font-size: 50px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contacto label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.input-group input, .input-group textarea {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid red;
+    color: black;
+}
+
+.input-group textarea {
+    padding: 100px;
+}
+
+#submit-button {
+    font-size: 16px;
+    font-family: 'Poppins';
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin-bottom: 150px;
+}
+
+#submit-button:hover {
+    background-color: #ab1c15;
+}
+
+.footer {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links h4 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul li a {
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.links ul li a:hover {
+    color: red;
+}
+
+.float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 35px;
+}
+
+.float-btn:hover {
+    background-color: #21ac5d;
+    transform: scale(1.1);
+}
+
+.float-btn img {
+    margin-top: 4px;
+    width: 70px;
+    height: 35px;
+}
+
+.copyright {
+    margin-top: 80px;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+    .logo-1 {
+        width: 20%;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+    .logo-2 {
+        width: 0;
+    }
+    .menu label {
+        display: initial;
+        margin-right: 50px;
+        margin-top: 65px;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 70%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .contacto {
+        margin-top: 250px;
+        padding: 20px;
+    }
+
+    .contacto h2 {
+        margin-bottom: 100px;
+    }
+
+    #submit-button {
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+
+    .copyright {
+        margin-top: 40px;
+    }
+
+
+}
