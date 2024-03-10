@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* MENU */
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-1 {
+    margin-right: 200px;
+    margin-top: 40px;
+}
+
+/* MENU 2 */
+
+.menu-2 {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 {
+    width: 0;
+}
+
+.logo-2 {
+    width: 150px;
+    margin-right: 15px;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.social:hover {
+    background-color: red;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #DB241B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* BANNER */
+
+.banner-txt {
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    margin-left: 25%;
+    color:white;
+    font-size: 40px;
+}
+
+.imagen {
+    margin-top: 25%;
+    margin-bottom: 15%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 550px;
+}
+
+/* EXHIBICION DE PRODUCTOS */
+
+.mostrador {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: 40%;
+}
+
+/* PRODUCTO PARTICULAR */
+
+.item {
+    width: 30%;
+    height: 480px;
+    margin: 10px;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    line-height: 22px;
+}
+
+.item:hover {
+    background-color: darkred;
+}
+
+.item img {
+    width: 130px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.item h2 {
+    font-size: 27px;
+    margin-bottom: 5%;
+}
+
+.item p {
+    font-size: 15px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.otro-box {
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid red;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    position: relative;
+}
+
+/* PRODUCTO SELECCIONADO  */
+
+.seleccion {
+    color: white;
+    transition: .5s ease;
+    opacity: 0;
+    width: 33px;
+    border: 1px solid red;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 65%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -150%;
+    height: 1000px;
+}
+
+.info h2 {
+    margin-bottom: 7%;
+}
+
+/* OPCION DE INGREDIENTES */
+
+.box {
+    margin-bottom: 10%;
+}
+
+.boton {
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 35%;
+    margin-right: 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links h4 {
+    color: white;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.2s;
+    margin-top: 550px;
+}
+
+.links ul li a {
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.links ul li a:hover {
+    color: red;
+}
+
+.footer img {
+    margin-top: 560px;
+}
+
+.links .social img {
+    margin-top: 8px;
+}
+
+/* COPYRIGHT*/
+
+.copyright {
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+/* BOTON WHATSAPP */
+
+.float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 35px;
+}
+
+.float-btn:hover {
+    background-color: #21ac5d;
+    transform: scale(1.1);
+}
+
+.float-btn img {
+    margin-top: 4px;
+    width: 70px;
+    height: 35px;
+}
+
+
+/* R E S P O N S I V E */
+
+/* TABLET GRANDE */
+
+@media screen and (max-width:1200px) {
+
+    /* PRODUCTO PARTICULAR */
+
+    .item {
+        width: 47%;
+        margin: 7px;
+        height: 550px;
+    }
+
+    .item h2 {
+        font-size: 23px;
+    }
+
+    /* PRODUCTO SELECCIONADO */
+
+    .seleccion {
+        margin-left: 63%;
+        margin-top: -260%;
+        margin-bottom: 80%;
+    }
+
+    .info img {
+        width: 75%;
+    }
+}
+
+/* TABLET */
+
+@media screen and (max-width: 991px) {
+
+    /* MENU */
+
+    .menu {
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    /* MENU 2 */
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 20%;
+        margin-left: 30px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+        margin-right: 50px;
+        margin-top: 65px;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu-icono {
+        width: 20px;
+        position: absolute;
+        margin-left: -17px;
+    }
+
+    .menu .navbar ul li {
+        width: 70%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* BANNER */
+
+    .banner-txt {
+        margin-top: 50%;
+        font-size: 35px;
+    }
+
+    /* EXHIBICION DE PRODUCTOS */
+
+    .mostrador {
+        margin-right: 50%;
+        margin-bottom: -25%;
+    }
+
+    /* PRODUCTO PARTICULAR */
+
+    .item {
+        height: 470px;
+    }
+
+    /* PRODUCTO SELECCIONADO */
+
+    .seleccion {
+        display: none;
+    }
+
+}
+
+/* MOVIL GRANDE */
+
+@media screen and (max-width: 600px) {
+
+    /* MENU */
+
+    .menu {
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    /* MENU 2 */
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 20%;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+        margin-right: 50px;
+        margin-top: 65px;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu-icono {
+        width: 20px;
+        margin-right: 60px;
+    }
+
+    .menu .navbar ul li {
+        width: 70%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* BANNER */
+
+    .banner-txt {
+        margin-top: 90%;
+        font-size: 25px;
+    }
+
+    .imagen {
+        margin-top: 50%;
+    }
+
+    .imagen img {
+        height: 450px;
+    }
+
+    /* EXHIBIDOR DE PRODUCTOS */
+
+    .mostrador {
+        margin-top: 30%;
+        margin-bottom: -100%;
+    }
+
+    .item h2 {
+        font-size: 20px;
+    }
+
+    .item p {
+        font-size: 13px;
+    }
+
+    /* PRODUCTO SELECCIONADO */
+
+    .seleccion {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 8%;
+    }
+
+    .socials {
+        margin-left: 23%;
+    }
+
+    .social img {
+        margin-right: 20%;
+    }
+
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
+
+    .links ul li a:hover {
+        color: red;
+    }
+
+    /* COPYRIGHT */
+
+    .copyright {
+        margin-top: 40px;
+        font-size: 10px;
+        width: 300px;
+        margin-left: 18%;
+    }
+
+    /* BOTON WHATSAPP */
+    
+    .float-btn {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+
+    .float-btn img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+/* MOVIL PEQUEÑO */
+
+@media screen and (max-width:400px) {
+
+
+    /* MENU */
+
+    .menu-icono {
+        margin-top: -4%;
+        margin-left: 0%;
+    }
+
+    .logo-1 {
+        width: 25%;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+
+    /* BANNER */
+
+    .banner-txt {
+        font-size: 23px;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+
+    .banner-txt h1 {
+        margin-top: 135%;
+    }
+
+    .imagen {
+        margin-top: 40%;
+        margin-bottom: 40%;
+    }
+
+    /* RPODUCTOS */
+
+    .contenido {
+        margin-right: 10%;
+        margin-top: 70%;
+    }
+
+    /* EXHIBICION DE PRODUCTOS */
+
+    .mostrador {
+        margin-bottom: -130%;
+    }
+
+    /* PRODUCTO PARTICULAR*/
+
+    .item {
+        width:80%;
+        margin-left: 13%;
+        border: 2px solid red;
+        height: 500px;
+    }
+     
+    .item h2 {
+        margin-bottom: 20%;
+    }
+
+    .item p {
+        line-height: 20px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        margin-right: 10%;
+    }
+
+    .socials {
+        margin-left: 18%;
+    }
+
+    .socials img {
+        margin-right: 20%;
+    }
+
+    .links h4 {
+        font-size: 15px;
+    }
+
+    .links ul li a {
+        font-size: 13px;
+    }
+
+    /* COPYRIGHT*/
+
+    .copyright {
+        margin-left: 13%;
+    }
+
+}
