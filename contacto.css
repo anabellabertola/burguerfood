@@ -114,7 +114,7 @@ body {
 
 .contacto h2 {
     font-size: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     text-transform: uppercase;
 }
 
@@ -126,19 +126,26 @@ body {
 }
 
 .contacto label {
-    display: block;
-    margin-bottom: 2px;
+    display: none;
 }
 
 .input-group input, .input-group textarea {
-    width: 75%;
+    width: 50%;
     padding: 8px;
+    margin: 5px;
     border: 1px solid red;
     color: black;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.input-group textarea {
-    padding: 100px;
+input::placeholder, textarea::placeholder {
+    color: white;
+    font-family: "Roboto";
+}
+
+textarea::placeholder {
+    padding: 2px;
 }
 
 /* BOTON ENVIAR */
@@ -151,25 +158,97 @@ body {
     border-radius: 5px;
     background-color: red;
     color: white;
-    margin-bottom: 150px;
 }
 
 #submit-button:hover {
     background-color: #ab1c15;
 }
 
+/* UBICACION */
+
+.tu-eleccion {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    height: 1000px;
+    margin-bottom: 40px;
+}
+
+.txt-contenedor {
+    width: 500px;
+    height: 460px;
+    font-size: 13px;
+    color: white;
+    text-align: left;
+}
+
+.txt-electo {
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin: 10px;
+}
+
+.txt-electo h1 {
+    font-family: 'Poppins';
+    font-size: clamp(23px, 5vw, 27px);
+    font-weight: 600;
+    color: #FFA600;
+    margin-bottom: 2px;
+}
+
+
+.txt-electo p {
+    font-family: 'Roboto';
+    font-size: clamp(12px, 3vw, 16px);
+    color: #D3CFC6;
+}
+
+.txt-contenedor .img-eleccion {
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.mapa h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(17px, 3vw, 35px);
+    margin-bottom: 10%;
+}
+
+
 /* FOOTER */
 
 .footer {
-    padding: 100px 0px;
     display: flex;
+    background-image: url("./IMG/segundacheese.jpg");
+    background-position: left;
+    position: relative;
+    max-width: 1300px;
+    min-height: 400px;
+    background-blend-mode: darken;
+    background-size: auto;
+    align-items: center;
     justify-content: space-between;
+    padding: 30px;
+    margin-top: 15%;
 }
+
 .links h4 {
     color: white;
-    font-size: 20px;
-    text-transform: uppercase;
     margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.2s;
+    justify-content: left;
+    align-items: center;
+    display: flex
 }
 
 .links ul li a {
@@ -177,19 +256,21 @@ body {
     display: inline-block;
     margin-bottom: 5px;
     font-size: 16px;
-    transition: 0.2s;
 }
 
 .links ul li a:hover {
     color: red;
 }
 
+
+.links .social img {
+    margin-top: 8px;
+}
+
 /* COPYRIGHT */
 
 .copyright {
-    margin-top: 80px;
     text-align: center;
-    padding: 10px;
     background-color: black;
     color: white;
     font-size: 12px;

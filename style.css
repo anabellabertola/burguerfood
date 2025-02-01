@@ -236,13 +236,17 @@ body {
  .product {
     display: flex;
     align-items: center;
-    padding: 25px;
-    margin: 0 10px;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid red;
+    border-radius: 25px;
+    background-image: url("./IMG/otrafries.jpg");
+    
  }
 
  .product-img {
     width: 50%;
-    margin: 15px;
+    margin: 20px;
  }
 
  .product-img h4 {
@@ -355,12 +359,56 @@ body {
     background-color: #ab1c15;
 }
 
+/* APLICACION DELIVERY */
+.app {
+    background-image: url('./IMG/fondo.jpg');
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Separar elementos */
+    flex-wrap: wrap; /* Permitir ajuste en pantallas pequeñas */
+    padding: 50px; /* Espaciado interno */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.titulo-app {
+    color: white;
+    width: 50%; /* Ocupa la mitad del contenedor */
+    min-width: 300px; /* Evita que sea demasiado pequeño */
+}
+
+.titulo-app h1, 
+.titulo-app h2, 
+.titulo-app p {
+    margin-left: 0; /* Eliminar margen izquierdo innecesario */
+    text-align: left;
+}
+
+.img-app {
+    flex: 1; /* Hace que tome el espacio disponible */
+    display: flex;
+    justify-content: center;
+}
+
+.img-app img {
+    width: 90%; /* Ajustar tamaño de la imagen */
+    max-width: 400px; /* Evitar que sea demasiado grande */
+}
+
+.botones-aplicacion img {
+    border-radius: 5px;
+    border: 1px solid wheat;
+    padding: 20px;
+    margin: 20px 20px 20px 0px;
+}
+
 /* HORARIOS */
 
 .horario {
     padding: 100px 0px;
-    background-color: #0d0d0d;
+    background-image: url("./IMG/burger-and-fries-pattern-vector-º1.jpg");
+    margin-bottom: 17%;
 }
+
 
 .horario-info h2 {
     font-size: 55px;
@@ -373,7 +421,9 @@ body {
 
 .horario-txt {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .txt {
@@ -398,36 +448,116 @@ body {
 
 .map {
     filter: grayscale(50) invert(92%) contrast(93%);
+    margin-bottom: 170px;
 }
+
+.promociones-burguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.imagenes-promociones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes-promociones img {
+    width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
 
 /* FOOTER */
 
 .footer {
-    padding: 100px 0px;
     display: flex;
+    background-image: url("./IMG/segundacheese.jpg");
+    background-position: left;
+    position: relative;
+    max-width: 1300px;
+    min-height: 400px;
+    background-blend-mode: darken;
+    background-size: auto;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    padding: 30px;
+    margin-top: 15%;
 }
 
 .links h4 {
     color: white;
-    text-transform: uppercase;
     margin-bottom: 25px;
+    text-transform: uppercase;
     font-size: 20px;
+    transition: 0.2s;
+    justify-content: left;
+    align-items: center;
+    display: flex
 }
 
 .links ul li a {
-color: white;
-font-size: 16px;
-margin-bottom: 5px;
-display: inline-block;
-transition: 0.2s;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .links ul li a:hover {
     color: red;
 }
 
+
+.links .social img {
+    margin-top: 8px;
+}
+
+
+
+/* COPYRIGHT */
+
+.copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+/* BOTON WHATSAPP */
+
+.float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 35px;
+}
+
+.float-btn:hover {
+    background-color: #21ac5d;
+    transform: scale(1.1);
+}
+
+.float-btn img {
+    margin-top: 4px;
+    width: 70px;
+    height: 35px;
+}
 /* COPYRIGHT */
 
 .copyright {
@@ -610,6 +740,21 @@ transition: 0.2s;
         width: 30%;
         text-align: center;
     }
+
+    .app {
+        flex-direction: column; /* Apilar elementos en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .titulo-app {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-app img {
+        width: 70%;
+    }
+}
 
     /* HORARIOS */
 
@@ -864,6 +1009,7 @@ transition: 0.2s;
     .horario {
         padding: 30px;
         text-align: center;
+        flex-wrap: wrap;
     }
 
     .horario-info h2 {

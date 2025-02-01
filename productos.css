@@ -134,6 +134,8 @@ body {
 
 /* EXHIBICION DE PRODUCTOS */
 
+
+
 .mostrador {
     width: 100%;
     height: auto;
@@ -142,8 +144,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     color: white;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
 }
+
 
 /* PRODUCTO PARTICULAR */
 
@@ -225,6 +228,14 @@ body {
 
 .box {
     margin-bottom: 10%;
+    border-radius: 20px;
+    padding: 13px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+select option {
+    background-color: #181818;
 }
 
 .boton {
@@ -235,13 +246,30 @@ body {
     padding: 10px;
 }
 
+.divider {
+    border: 0.5px solid white;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
 /* FOOTER */
 
 .footer {
-    margin-top: 35%;
-    margin-right: 9%;
     display: flex;
+    background-image: url("./IMG/segundacheese.jpg");
+    background-position: left;
+    position: relative;
+    max-width: 1300px;
+    min-height: 400px;
+    background-blend-mode: darken;
+    background-size: auto;
+    align-items: center;
     justify-content: space-between;
+    padding: 30px;
+    margin-top: 35%;
 }
 
 .links h4 {
@@ -250,7 +278,9 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     transition: 0.2s;
-    margin-top: 550px;
+    justify-content: left;
+    align-items: center;
+    display: flex
 }
 
 .links ul li a {
@@ -264,9 +294,6 @@ body {
     color: red;
 }
 
-.footer img {
-    margin-top: 560px;
-}
 
 .links .social img {
     margin-top: 8px;
@@ -276,7 +303,6 @@ body {
 
 .copyright {
     text-align: center;
-    padding: 50px;
     background-color: black;
     color: white;
     font-size: 12px;
