@@ -134,6 +134,9 @@ body {
 
 /* EXHIBICION DE PRODUCTOS */
 
+.contenido {
+    min-height: 400px;
+}
 
 
 .mostrador {
@@ -259,7 +262,7 @@ select option {
 
 .footer {
     display: flex;
-    background-image: url("./IMG/segundacheese.jpg");
+    background-image: url("./IMG/fondo.jpg");
     background-position: left;
     position: relative;
     max-width: 1300px;
@@ -267,6 +270,7 @@ select option {
     background-blend-mode: darken;
     background-size: auto;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     margin-top: 35%;
@@ -276,7 +280,7 @@ select option {
     color: white;
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     transition: 0.2s;
     justify-content: left;
     align-items: center;
@@ -287,7 +291,7 @@ select option {
     color: white;
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: clamp(13px, 3vw, 16px);
 }
 
 .links ul li a:hover {
@@ -305,7 +309,7 @@ select option {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: clamp(9px, 2vw, 12px);
 }
 
 /* BOTON WHATSAPP */
@@ -369,6 +373,10 @@ select option {
 
     .info img {
         width: 75%;
+    }
+
+    .footer {
+        margin-top: 130%;
     }
 }
 
@@ -434,6 +442,7 @@ select option {
         font-size: 35px;
     }
 
+
     /* EXHIBICION DE PRODUCTOS */
 
     .mostrador {
@@ -451,6 +460,10 @@ select option {
 
     .seleccion {
         display: none;
+    }
+
+    .footer {
+        margin-top: 50%;
     }
 
 }
@@ -546,39 +559,7 @@ select option {
         display: none;
     }
 
-    /* FOOTER */
 
-    .footer {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-        margin-left: 8%;
-    }
-
-    .socials {
-        margin-left: 23%;
-    }
-
-    .social img {
-        margin-right: 20%;
-    }
-
-    .links h4 {
-        margin: 25px 0px 10px 0px;
-    }
-
-    .links ul li a:hover {
-        color: red;
-    }
-
-    /* COPYRIGHT */
-
-    .copyright {
-        margin-top: 40px;
-        font-size: 10px;
-        width: 300px;
-        margin-left: 18%;
-    }
 
     /* BOTON WHATSAPP */
     
@@ -591,6 +572,10 @@ select option {
     .float-btn img {
         width: 40px;
         height: auto;
+    }
+
+    .footer {
+        margin-top: 130%;
     }
 }
 
@@ -659,32 +644,6 @@ select option {
         line-height: 20px;
     }
 
-    /* FOOTER */
-
-    .footer {
-        margin-right: 10%;
-    }
-
-    .socials {
-        margin-left: 18%;
-    }
-
-    .socials img {
-        margin-right: 20%;
-    }
-
-    .links h4 {
-        font-size: 15px;
-    }
-
-    .links ul li a {
-        font-size: 13px;
-    }
-
-    /* COPYRIGHT*/
-
-    .copyright {
-        margin-left: 13%;
-    }
+    
 
 }

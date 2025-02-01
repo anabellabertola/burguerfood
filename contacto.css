@@ -110,6 +110,9 @@ body {
     margin-top: 350px;
     color: white;
     font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url("./IMG/burger-and-fries-pattern-vector-º1.jpg");
 }
 
 .contacto h2 {
@@ -134,9 +137,10 @@ body {
     padding: 8px;
     margin: 5px;
     border: 1px solid red;
-    color: black;
+    color: white;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: black;
+    font-family: "Roboto";
 }
 
 input::placeholder, textarea::placeholder {
@@ -227,7 +231,7 @@ textarea::placeholder {
 
 .footer {
     display: flex;
-    background-image: url("./IMG/segundacheese.jpg");
+    background-image: url("./IMG/fondo.jpg");
     background-position: left;
     position: relative;
     max-width: 1300px;
@@ -235,6 +239,7 @@ textarea::placeholder {
     background-blend-mode: darken;
     background-size: auto;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     margin-top: 15%;
@@ -244,7 +249,7 @@ textarea::placeholder {
     color: white;
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     transition: 0.2s;
     justify-content: left;
     align-items: center;
@@ -255,7 +260,7 @@ textarea::placeholder {
     color: white;
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: clamp(13px, 3vw, 16px);
 }
 
 .links ul li a:hover {
@@ -267,13 +272,13 @@ textarea::placeholder {
     margin-top: 8px;
 }
 
-/* COPYRIGHT */
+/* COPYRIGHT*/
 
 .copyright {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: clamp(9px, 2vw, 12px);
 }
 
 /* BOTON WHATSAPP */
@@ -312,6 +317,8 @@ textarea::placeholder {
 /* R E S P O N S I V E */
 
 /* TABLET */
+
+
 
 @media (max-width: 991px) {
     /* MENU */

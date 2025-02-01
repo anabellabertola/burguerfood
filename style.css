@@ -152,7 +152,7 @@ body {
 
 .slider-txt p {
     font-size: 15px;
-    color: gray;
+    color: white;
 }
 
 .botones {
@@ -333,12 +333,11 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
-
 }
 
 .info-txt p {
     font-size: 15px;
-    color: gray;
+    color: white;
     margin-bottom: 80px;
 }
 
@@ -382,6 +381,24 @@ body {
     margin-left: 0; /* Eliminar margen izquierdo innecesario */
     text-align: left;
 }
+
+.titulo-app h1 {
+    margin-bottom: 5px;
+
+}
+
+.titulo-app h2 {
+    margin-bottom: 27px;
+    font-size: clamp(35px, 3vw, 45px);
+}
+
+.titulo-app p {
+    margin-bottom: 27px;
+    font-size: clamp(13px, 3vw, 17px);
+}
+
+
+
 
 .img-app {
     flex: 1; /* Hace que tome el espacio disponible */
@@ -476,7 +493,7 @@ body {
 
 .footer {
     display: flex;
-    background-image: url("./IMG/segundacheese.jpg");
+    background-image: url("./IMG/fondo.jpg");
     background-position: left;
     position: relative;
     max-width: 1300px;
@@ -484,6 +501,7 @@ body {
     background-blend-mode: darken;
     background-size: auto;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
     margin-top: 15%;
@@ -493,7 +511,7 @@ body {
     color: white;
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     transition: 0.2s;
     justify-content: left;
     align-items: center;
@@ -504,7 +522,7 @@ body {
     color: white;
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: clamp(13px, 3vw, 16px);
 }
 
 .links ul li a:hover {
@@ -516,15 +534,13 @@ body {
     margin-top: 8px;
 }
 
-
-
-/* COPYRIGHT */
+/* COPYRIGHT*/
 
 .copyright {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: clamp(9px, 2vw, 12px);
 }
 
 /* BOTON WHATSAPP */
@@ -557,15 +573,6 @@ body {
     margin-top: 4px;
     width: 70px;
     height: 35px;
-}
-/* COPYRIGHT */
-
-.copyright {
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    font-size: 12px;
 }
 
 /* BOTON WHATSAPP */
@@ -603,6 +610,8 @@ body {
 /* R E S P O N S I V E */
 
 /* TABLET */
+
+
 
 @media screen and (max-width: 991px) {
 
@@ -652,10 +661,13 @@ body {
 
     .menu .navbar ul li {
         width: 70%;
+        padding: 10px;
+        margin: 10px;
     }
 
     #menu:checked ~ .navbar {
         display: initial;
+
     }
 
     /* SLIDER */
@@ -754,7 +766,6 @@ body {
     .img-app img {
         width: 70%;
     }
-}
 
     /* HORARIOS */
 
@@ -770,11 +781,6 @@ body {
         font-size: 15px; 
     }
 
-    /* FOOTER */
-
-    .footer {
-        margin-right: 8%;
-    }
 }
 
 /* MOVIL GRANDE */
@@ -822,10 +828,6 @@ body {
         width: 100%;
     }
 
-    .menu .navbar ul li {
-        width: 100%;
-
-    }
 
     #menu:checked ~ .navbar {
         display: initial; 
@@ -1050,53 +1052,7 @@ body {
         margin-bottom: 30%;
     }
 
-    /* FOOTER */
 
-    .footer {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .links {
-        margin-right: 10%;
-    }
-
-    .links {
-        font-size: 20px;
-        margin-left: 10%;
-    }
-
-    .links ul li a {
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .socials {
-        justify-content: center;
-    }
-
-    .social img {
-        margin: 8px 0 0 0;
-    }
- 
-    .links h4 {
-        margin: 25px 0px 10px 0px;
-    }
-
-    .links ul li a:hover {
-        color: red;
-    }
-
-    /* COPYRIGHT */
-
-    .copyright {
-        margin-top: 40px;
-        font-size: 10px;
-        width: 300px;
-        margin-left: 20%;
-    }
 
     /* BOTON WHATSAPP */
     

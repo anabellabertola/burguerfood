@@ -202,21 +202,21 @@ body {
 
 .txt-electo h1 {
     font-family: 'Poppins';
-    font-size: clamp(23px, 5vw, 30px);
+    font-size: clamp(27px, 5vw, 30px);
     font-weight: 700;
     margin-bottom: 2px;
 }
 
 .txt-electo h2 {
     font-family: 'Roboto';
-    font-size: clamp(20px, 3vw, 27px);
+    font-size: clamp(23px, 3vw, 27px);
     font-weight: 600;
     margin-bottom: 25px;
 }
 
 .txt-electo p {
-    font-family: 'Roboto';
-    font-size: clamp(12px, 3vw, 16px);
+    font-family: 'Poppins';
+    font-size: clamp(13px, 3vw, 16px);
     color: #D3CFC6;
 }
 
@@ -232,10 +232,15 @@ body {
     margin-top: 100px;
     color: white;
     font-size: 17px;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 90px;
+    background-image: url("./IMG/burger-and-fries-pattern-vector-º1.jpg");
 }
 
 .contacto h2 {
-    font-size: 40px;
+    font-size: clamp(30px, 3vw, 40px);
     margin-bottom: 100px;
     text-transform: uppercase;
 }
@@ -256,7 +261,7 @@ body {
     padding: 8px;
     border: 1px solid red;
     color: black;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: black;
     border-radius: 25px;
 }
 
@@ -279,7 +284,6 @@ textarea::placeholder {
     border-radius: 5px;
     background-color: red;
     color: white;
-    margin-bottom: 150px;
 }
 
 #submit-button:hover {
@@ -291,22 +295,25 @@ textarea::placeholder {
 
 .footer {
     display: flex;
-    background-image: url("./IMG/segundacheese.jpg");
+    background-image: url("./IMG/fondo.jpg");
     background-position: left;
     position: relative;
+    max-width: 1300px;
     min-height: 400px;
     background-blend-mode: darken;
     background-size: auto;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
+    margin-top: 15%;
 }
 
 .links h4 {
     color: white;
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     transition: 0.2s;
     justify-content: left;
     align-items: center;
@@ -317,7 +324,7 @@ textarea::placeholder {
     color: white;
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: clamp(13px, 3vw, 16px);
 }
 
 .links ul li a:hover {
@@ -329,13 +336,13 @@ textarea::placeholder {
     margin-top: 8px;
 }
 
-/* COPYRIGHT */
+/* COPYRIGHT*/
 
 .copyright {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: clamp(9px, 2vw, 12px);
 }
 
 /* BOTON WHATSAPP */
@@ -379,6 +386,10 @@ textarea::placeholder {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .tu-eleccion {
+        margin-top: 20%;
     }
 
 
@@ -455,6 +466,10 @@ textarea::placeholder {
         font-size: 55px;
     }
 
+    .tu-eleccion {
+        margin-top: 20%;
+    }
+
 
 }
 
@@ -490,40 +505,14 @@ textarea::placeholder {
         height: 450px;
     }
 
-
-    /* FOOTER */
+    .tu-eleccion {
+        margin-top: 40%;
+    }
 
     .footer {
-        background-position: top;
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
+        margin-top: 50%;
     }
 
-    .socials {
-        margin-left: 23%;
-    }
-
-    .social img {
-        margin-right: 20%;
-    }
-
-    .links h4 {
-        margin: 25px 0px 10px 0px;
-    }
-
-    .links ul li a:hover {
-        color: red;
-    }
-
-    /* COPYRIGHT */
-
-    .copyright {
-        margin-top: 40px;
-        font-size: 10px;
-        width: 300px;
-        margin-left: 20%;
-    }
 
     /* BOTON WHATSAPP */
     
@@ -537,6 +526,8 @@ textarea::placeholder {
         width: 40px;
         height: auto;
     }
+
+
 }
 
 
@@ -574,33 +565,4 @@ textarea::placeholder {
     }
 
 
-
-    /* FOOTER */
-
-    .footer {
-        margin-top: -40%;
-        margin-left: 8%;
-    }
-
-    .socials {
-        margin-left: 17%;
-    }
-
-    .socials img {
-        margin-right: 23%;
-    }
-
-    .links h4 {
-        font-size: 15px;
-    }
-
-    .links ul li a {
-        font-size: 13px;
-    }
-
-    /* COPYRIGHT */
-
-    .copyright {
-        margin-left: 11%;
-    }
 }
