@@ -384,12 +384,12 @@ body {
 
 .titulo-app h1 {
     margin-bottom: 5px;
-
+    font-size: clamp(16px, 3vw, 25px);
 }
 
 .titulo-app h2 {
     margin-bottom: 27px;
-    font-size: clamp(35px, 3vw, 45px);
+    font-size: clamp(30px, 3vw, 45px);
 }
 
 .titulo-app p {

@@ -161,6 +161,7 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 22px;
+    border: 1px solid red;
 }
 
 .item:hover {
@@ -543,6 +544,10 @@ select option {
     .mostrador {
         margin-top: 30%;
         margin-bottom: -100%;
+    }
+
+    .item {
+        width: 70%;
     }
 
     .item h2 {

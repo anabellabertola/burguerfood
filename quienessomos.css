@@ -144,6 +144,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: clamp(27px, 3vw, 35px);
 }
 
 .banner-p p {
