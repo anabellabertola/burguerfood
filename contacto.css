@@ -278,6 +278,7 @@ textarea::placeholder {
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 20px;
     font-size: clamp(9px, 2vw, 12px);
 }
 
@@ -388,33 +389,6 @@ textarea::placeholder {
         margin-top: 30px;
     }
 
-    /* FOOTER */
-    
-    .footer {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .links h4 {
-        margin: 25px 0px 10px 0px;
-    }
-
-    /* REDES SOCIALES FOOTER */
-
-    .socials {
-        justify-content: center;
-    }
-
-    .social img {
-        margin: 8px 0 0 0;
-    }
-
-    /* COPYRIGHT*/
-
-    .copyright {
-        margin-top: 40px;
-    }
 
 
 }
@@ -468,7 +442,6 @@ textarea::placeholder {
 
     .contacto {
         margin-top: 100%;
-        margin-bottom: 90%;
     }
     .contacto h2 {
         font-size: 32px;
@@ -484,19 +457,6 @@ textarea::placeholder {
         font-size: 13px;
     }
 
-    /* FOOTER */
-
-    .footer {
-        margin-left: 2%;
-    }
-
-    .links h4 {
-        font-size: 15px;
-    }
-
-    .links ul li a {
-        font-size: 13px;
-    }
 
 
 }

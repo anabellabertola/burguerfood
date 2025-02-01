@@ -540,6 +540,7 @@ body {
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 20px;
     font-size: clamp(9px, 2vw, 12px);
 }
 
@@ -667,7 +668,6 @@ body {
 
     #menu:checked ~ .navbar {
         display: initial;
-
     }
 
     /* SLIDER */
@@ -761,6 +761,10 @@ body {
     .titulo-app {
         width: 100%;
         text-align: center;
+    }
+
+    .botones-aplicacion img {
+        width: 150px;
     }
 
     .img-app img {
@@ -970,8 +974,8 @@ body {
     }
 
     .info-img img {
-        width: 200px;
-        height: 100px;
+        width: 370px;
+        height: 190px;
         margin-left: 5px;
         margin-top: 50px;
         margin-bottom: 25px;
@@ -1004,6 +1008,11 @@ body {
 
     .btn-1 {
         font-size: 16px;
+    }
+
+
+    .botones-aplicacion img {
+        width: 130px;
     }
 
     /* HORARIOS */
@@ -1133,7 +1142,9 @@ body {
     }
 
     .info-img img {
-        margin-right: 5%;
+        margin-left: -2%;
+        width: 300px;
+        height: 150px;
     }
 
     .info-txt {
@@ -1184,9 +1195,5 @@ body {
         font-size: 13px;
     }
 
-    /* COPYRIGHT */
 
-    .copyright {
-        margin-left: 13%;
-    }
 }

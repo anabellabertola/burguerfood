@@ -138,12 +138,14 @@ body {
     height: 550px;
 }
 
+
 .banner-p h1 {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 40px;
     font-size: clamp(27px, 3vw, 35px);
 }
 
@@ -154,8 +156,9 @@ body {
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 70px;
+    margin: 23px;
     font-size: 14px;
+
 }
 
 .button {
@@ -163,6 +166,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
 .button a{
@@ -506,6 +510,10 @@ textarea::placeholder {
         height: 450px;
     }
 
+    .banner-p {
+        margin-top: 30%;
+    }
+
     .tu-eleccion {
         margin-top: 40%;
     }
@@ -564,6 +572,7 @@ textarea::placeholder {
         margin-bottom: 50%;
         margin-top: 60%;
     }
+
 
 
 }
