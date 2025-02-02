@@ -574,6 +574,11 @@ textarea::placeholder {
         margin-top: 60%;
     }
 
+    .input-group input, .input-group textarea {
+        width: 90%;
+        
+    }
+
 
 
 }

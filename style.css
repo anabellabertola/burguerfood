@@ -1082,6 +1082,10 @@ body {
 
 @media screen and (max-width:400px) {
 
+    .menu-icono {
+        margin-left: 15px;
+    }
+
     .header-content {
         margin-top: 25%;
         margin-bottom: 20%;
@@ -1089,9 +1093,6 @@ body {
 
     /* SLIDER */
 
-    .slider {
-        margin-right: 2%;
-    }
 
     .slider-img img {
         margin-left: -35%;
@@ -1105,12 +1106,17 @@ body {
 
     /* SLIDER CATEGORIAS */
 
+
+
+
     .swiper-button-next {
         margin-top: 3%;
+
     }
 
     .swiper-button-prev {
         margin-top: 3%;
+        margin-left: 3%;
     }
 
     .product {
@@ -1170,11 +1176,20 @@ body {
         margin-left: 6%;
     }
 
+    .socials {
+        margin-left: -10%;
+    }
+
     /* MAPA */
 
     .map {
         margin-top: 60%;
     }
+
+    .img-app img {
+        width: 100%;
+    }
+
 
     /* FOOTER */
 
@@ -1194,6 +1209,7 @@ body {
     .links ul li a {
         font-size: 13px;
     }
+
 
 
 }
