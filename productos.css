@@ -310,6 +310,7 @@ select option {
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 20px;
     font-size: clamp(9px, 2vw, 12px);
 }
 
