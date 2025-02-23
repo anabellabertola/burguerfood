@@ -7,14 +7,16 @@
     text-decoration: none;
     list-style: none;
 }
+
 body {
     background-color:black;
+
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 10px;
 }
 
 /* MENU */
@@ -81,7 +83,7 @@ body {
 }
 
 .menu .navbar ul li a {
-    font-size: 17px;
+    font-size: 15px;
     padding: 7px;
     color: white;
 }
@@ -483,8 +485,8 @@ body {
 }
 
 .imagenes-promociones img {
-    width: 300px;
-    margin: 30px;
+    width: 280px;
+    margin: 32px;
     border-radius: 10px;
 }
 
